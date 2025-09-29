@@ -2,6 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/portfolio/" />
+    <script>
+      // Redirect to base path preserving path after repo name
+      (function() {
+        var repoBase = '/portfolio/';
+        var redirectUrl = repoBase;
+        if (location.pathname.startsWith(repoBase)) {
+          redirectUrl = location.pathname + location.search + location.hash;
+        }
+        // Fallback to base
+        location.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+  </html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
     <title>Redirecting...</title>
     <meta http-equiv="refresh" content="0; url=/portfolio/" />
     <link rel="canonical" href="/portfolio/" />
