@@ -8,6 +8,14 @@ const AutomobileCRM = () => {
             <span className="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">Automobile CRM – Showroom & Workshop Solution</span>
           </h3>
           <p className="mt-2 text-sm leading-normal">A CRM designed for automobile showrooms and workshops.</p>
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            {(() => { const base = import.meta.env.BASE_URL; return (
+              <>
+                <img src={`${base}automobile1.jpeg`} alt="Automobile CRM 1" className="h-28 w-full object-cover rounded-md border border-slate-700" />
+                <img src={`${base}automobile2.png`} alt="Automobile CRM 2" className="h-28 w-full object-cover rounded-md border border-slate-700" />
+              </>
+            ); })()}
+          </div>
           <ul className="mt-2 list-disc pl-5 text-sm leading-6 text-slate-300">
             <li>Ledger system for transactions</li>
             <li>Job card creation and assignment for mechanics</li>
@@ -15,6 +23,14 @@ const AutomobileCRM = () => {
             <li>Attendance tracking for workers</li>
             <li>Master settings for complete customization</li>
           </ul>
+          <div className="mt-3">
+            <a href="https://garage.questdigiflex.com" target="_blank" rel="noreferrer" className="inline-flex items-center text-teal-300 hover:text-teal-200">
+              Visit live site
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="ml-1 h-4 w-4">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </li>

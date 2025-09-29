@@ -8,6 +8,14 @@ const SuperClubHoliday = () => {
             <span className="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">Super Club Holiday – Tour & Travel Website + CRM</span>
           </h3>
           <p className="mt-2 text-sm leading-normal">A travel package website integrated with CRM for smooth customer handling.</p>
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            {(() => { const base = import.meta.env.BASE_URL; return (
+              <>
+                <img src={`${base}superclub.jpg`} alt="SuperClubHoliday 1" className="h-28 w-full object-cover rounded-md border border-slate-700" />
+                <img src={`${base}superclub1.jpg`} alt="SuperClubHoliday 2" className="h-28 w-full object-cover rounded-md border border-slate-700" />
+              </>
+            ); })()}
+          </div>
           <ul className="mt-2 list-disc pl-5 text-sm leading-6 text-slate-300">
             <li>Admin panel to manage tour packages</li>
             <li>Itinerary builder for custom travel plans</li>

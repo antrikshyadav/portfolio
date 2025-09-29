@@ -22,7 +22,7 @@ const Projects = () => {
             <a
               className="inline-flex items-center font-medium leading-tight text-slate-200 group"
               aria-label="View Full Project Archive"
-              href="https://github.com/coffeeandtravel?tab=repositories"
+              href="https://github.com/antrikshyadav?tab=repositories"
               target="_github"
               rel="noreferrer noopener"
             >

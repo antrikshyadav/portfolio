@@ -12,12 +12,28 @@ const HMS = () => {
           <p className="mt-2 text-sm leading-normal">
             A complete hospital management system designed to streamline operations for clinics and hospitals.
           </p>
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            {(() => { const base = import.meta.env.BASE_URL; return (
+              <>
+                <img src={`${base}Overview-hms.jpg`} alt="HMS Overview" className="h-28 w-full object-cover rounded-md border border-slate-700" />
+                <img src={`${base}Dashboard-hms.jpg`} alt="HMS Dashboard" className="h-28 w-full object-cover rounded-md border border-slate-700" />
+              </>
+            ); })()}
+          </div>
           <ul className="mt-2 list-disc pl-5 text-sm leading-6 text-slate-300">
             <li>Patient management and appointment scheduling</li>
             <li>Doctor and staff management</li>
             <li>Billing and reporting modules</li>
             <li>Role-based access for secure handling of medical records</li>
           </ul>
+          <div className="mt-3">
+            <a href="https://fivelinehms.questdigiflex.com" target="_blank" rel="noreferrer" className="inline-flex items-center text-teal-300 hover:text-teal-200">
+              Visit live site
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="ml-1 h-4 w-4">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </li>

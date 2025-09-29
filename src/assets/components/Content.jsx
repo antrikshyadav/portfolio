@@ -56,6 +56,13 @@ const Content = () => {
         </ol>
         <Projects/>
         <Services/>
+        <section id="contact" className="mt-16">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">Contact</h2>
+          <div className="mt-4 text-sm leading-6 text-slate-300">
+            <p>Email: <a className="text-teal-300 hover:text-teal-200" href="mailto:yadav98antriksh@gmail.com">yadav98antriksh@gmail.com</a></p>
+            <p>Phone: <a className="text-teal-300 hover:text-teal-200" href="tel:+919131698814">+91 9131698814</a></p>
+          </div>
+        </section>
       </div>
     </div>
   );
