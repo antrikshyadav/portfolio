@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Allow: /
-Sitemap: https://coffeeandtravel.github.io/mayank/sitemap.xml
